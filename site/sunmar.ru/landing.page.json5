@@ -1,0 +1,11 @@
+{
+    contents: [
+        '/site/sunmar.ru/markup/main.html',
+				'/site/sunmar.ru/markup/post-hero-accordion.html',
+				'/site/sunmar.ru/markup/banner-w-timer.html',
+				'/site/sunmar.ru/markup/conditions.html',
+				'/site/sunmar.ru/markup/different-rest.html',
+				'/site/sunmar.ru/markup/img-slider.html',
+				'/site/sunmar.ru/markup/banner.html'
+    ]
+}

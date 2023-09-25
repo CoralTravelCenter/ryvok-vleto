@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",(function(){var n=null,e=window.matchMedia("(max-width: 768px)");function t(e){e?n||(n=new Swiper(".swiper",{pagination:{el:".swiper-pagination",clickable:!1},loop:!0})):n&&(n.destroy(!0,!0),n=null)}t(e.matches),e.addEventListener("change",(function(n){return t(n.matches)}))}));

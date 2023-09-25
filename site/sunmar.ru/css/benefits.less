@@ -1,0 +1,165 @@
+.infographics-section {
+	margin-top: 5em;
+	font-family: BlissPro, sans-serif;
+	font-size: 16px;
+
+	.contenu {
+		padding-inline: 15px;
+	}
+}
+
+@media screen and (max-width: 1370px) {
+	.infographics-section {
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+}
+
+.infographics-section>article>.contenu {
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+}
+
+.infographics-section h2 {
+	color: #000;
+	text-align: left;
+	margin-bottom: 0;
+	font-family: BlissPro, sans-serif;
+	font-size: 2.5em;
+	font-weight: 700;
+	line-height: 1.1;
+}
+
+.infographics-section h3 {
+	color: #000;
+	text-align: left;
+	margin-bottom: 0;
+	font-family: BlissPro, sans-serif;
+	font-size: 1.75em;
+	font-weight: 600;
+	line-height: 1.57;
+}
+
+.infographics-section p {
+	color: #000;
+	text-align: left;
+	margin-bottom: 0;
+	font-family: BlissPro, sans-serif;
+	font-size: 1.25em;
+	font-weight: 400;
+	line-height: 1.4;
+}
+
+@media screen and (max-width: 768px) {
+	.infographics-section h2 {
+		font-size: 2em;
+		max-width: 100% !important;
+		width: 100% !important;
+	}
+
+	.infographics-section p {
+		font-size: 1.14em;
+		line-height: 1.375;
+		max-width: 100% !important;
+		width: 100% !important;
+	}
+}
+
+@media screen and (max-width: 340px) {
+	.infographics-section h2 {
+		font-size: 1.85em;
+	}
+}
+
+.infographics-section .infographics {
+	grid-template: 1fr / repeat(6, 1fr);
+	justify-content: space-between;
+	align-items: start;
+	column-gap: 15px;
+	display: grid;
+}
+
+@media (max-width: 768px) {
+	.infographics-section .infographics {
+		grid-template: repeat(3, auto) / repeat(2, 1fr);
+		gap: 36px 9px;
+	}
+}
+
+.infographics-section .infographics-section__title {
+	text-align: left !important;
+}
+
+.infographics-section .infographics .infographics-item {
+	text-align: center;
+	grid-template: 140px 1fr/1fr;
+	justify-content: start;
+	align-items: start;
+	padding: 16px 8px 24px;
+	display: grid;
+}
+
+@media (max-width: 961px) and (min-width: 768px) {
+	.infographics-section .infographics .infographics-item {
+		grid-template: 125px 1fr/1fr;
+	}
+}
+
+.infographics-section .infographics .infographics-item .infographics-item__image img {
+	max-width: 100%;
+	max-height: 135px;
+	object-fit: contain;
+}
+
+.infographics-section .infographics .infographics-item .infographics__text {
+	margin-top: 14px;
+}
+
+@media (max-width: 768px) {
+	.infographics-section .infographics .infographics-item .infographics__text {
+		margin-top: 19px;
+	}
+}
+
+.infographics-section .infographics .infographics-item .infographics__text p {
+	color: #000;
+	text-align: center;
+	margin-top: 6px;
+	font-family: BlissPro, sans-serif;
+	font-size: 1em;
+	line-height: 1.375;
+	font-weight: 400 !important;
+}
+
+@media (max-width: 961px) and (min-width: 768px) {
+	.infographics-section .infographics .infographics-item .infographics__text p {
+		font-size: 0.85em;
+	}
+}
+
+@media (max-width: 360px) {
+	.infographics-section .infographics .infographics-item .infographics__text p {
+		font-size: 0.8em;
+	}
+}
+
+.infographics-section .infographics .infographics-item .infographics__text h4 {
+	color: #000;
+	text-align: center;
+	font-family: BlissPro, sans-serif;
+	font-size: 1em;
+	line-height: 1.375;
+	font-weight: 600 !important;
+}
+
+@media (max-width: 961px) and (min-width: 768px) {
+	.infographics-section .infographics .infographics-item .infographics__text h4 {
+		font-size: 0.85em;
+	}
+}
+
+@media (max-width: 360px) {
+	.infographics-section .infographics .infographics-item .infographics__text h4 {
+		font-size: 0.8em;
+	}
+}

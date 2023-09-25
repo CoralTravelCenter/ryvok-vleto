@@ -1,0 +1,124 @@
+section.different {
+	h2 {
+		flex-basis: 30%;
+		flex-grow: 0;
+	}
+
+	h3 {
+		color: #000000 !important;
+		margin-bottom: 0.8em !important;
+	}
+
+	p {
+		color: #000000;
+	}
+}
+
+
+.tabs-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1rem;
+
+	@media (max-width: 768px) {
+		flex-direction: column;
+	}
+}
+
+.tabs__panel {
+	display: none;
+	background-color: #ffffff;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	border-radius: 8px;
+}
+
+.tabs__nav {
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+	gap: 1.2rem;
+	padding: 0;
+	max-width: 729px;
+	margin: 0;
+
+	@media (max-width: 768px)  {
+		overflow-x: scroll;
+		justify-content: unset;
+		padding-block: 1em !important;
+		padding-inline: .5em !important;
+		scroll-snap-type: x mandatory;
+		width: 100%;
+	}
+}
+
+.tabs__nav-item {
+	@media (max-width: 768px) {
+		scroll-snap-align: center;
+	}
+}
+
+.tabs__panel--active {
+	display: flex;
+
+	@media (max-width: 768px) {
+		flex-direction: column;
+	}
+}
+
+.tabs__nav-btn {
+	width: fit-content;
+	background-color: transparent;
+	color: #000000;
+	cursor: pointer;
+	border: none;
+	padding: 0 1.5em;
+	height: 2.7em;
+	border-radius: 100px;
+	transition: all var(--accordion-time) ease;
+	font-size: 1em;
+}
+
+.tabs__nav-btn--active {
+	box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.06);
+	background-color: #ffffff;
+	font-weight: 600;
+}
+
+.tabs__nav-item {
+	width: fit-content;
+}
+
+.tabs__content {
+	padding-top: 1.5em;
+	img {
+		width: 100%;
+		height: auto;
+		max-height: 261px;
+		max-width: 471px;
+		object-fit: cover;
+		border-top-left-radius: 8px;
+		border-bottom-left-radius: 8px;
+
+		@media (max-width: 768px) {
+			border-top-right-radius: 8px;
+			border-bottom-left-radius: 0px;
+		}
+	}
+	.text {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		padding-block: 3em;
+		padding-inline: 5%;
+		font-size: 16px;
+
+		@media (max-width: 768px) {
+			padding-inline: 2em;
+		}
+	}
+}
+
+.tabs__nav-btn:focus {
+	outline: none;
+}
